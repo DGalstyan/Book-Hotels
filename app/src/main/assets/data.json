@@ -1,0 +1,46 @@
+{
+  "locations": [
+    {
+      "fullName": "New Delhi",
+      "hotelsCount": 1412,
+      "countryName": "India",
+      "id": 24077
+    },
+    {
+      "fullName": "Iceland",
+      "hotelsCount": 395,
+      "countryName": "Iceland",
+      "id": 5044
+    },
+    {
+      "fullName": "New York",
+      "hotelsCount": 2679,
+      "countryName": "United States",
+      "id": 20857
+    },
+    {
+      "fullName": "Mumbai",
+      "hotelsCount": 641,
+      "countryName": "India",
+      "id": 25826
+    },
+    {
+      "fullName": "Venice",
+      "hotelsCount": 2446,
+      "countryName": "Italy",
+      "id": 13964
+    },
+    {
+      "fullName": "Hong kong",
+      "hotelsCount": 1117,
+      "countryName": "Hong Kong",
+      "id": 4525
+    },
+    {
+      "fullName": "London",
+      "hotelsCount": 6690,
+      "countryName": "United Kingdom",
+      "id": 7896
+    }
+  ]
+}

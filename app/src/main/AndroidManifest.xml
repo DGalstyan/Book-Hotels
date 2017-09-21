@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.booking.android.hotel">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <meta-data android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+
+    <application
+        android:name="com.booking.android.hotel.utils.HotelsApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <activity
+            android:name="com.booking.android.hotel.activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.booking.android.hotel.activity.HotelSrpActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name="com.booking.android.hotel.activity.SavedCardsActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name="com.booking.android.hotel.activity.HotelDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name="com.booking.android.hotel.activity.CalendarActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name="com.booking.android.hotel.activity.ToursActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name="com.booking.android.hotel.activity.SearchActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name="com.booking.android.hotel.activity.AlbumActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name="com.booking.android.hotel.activity.BlurredLayoutActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name="com.booking.android.hotel.activity.TripDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name="com.booking.android.hotel.activity.BlogDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name="com.booking.android.hotel.activity.PublicationActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name="com.booking.android.hotel.activity.PublicationActivityOld"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name="com.booking.android.hotel.activity.SearchCityActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.booking.android.hotel.activity.NoTripActivity" />
+        <activity android:name="com.booking.android.hotel.activity.ProfileActivity" />
+        <activity android:name="com.booking.android.hotel.activity.BlogActivity" />
+        <activity android:name="com.booking.android.hotel.activity.HotelsActivity" />
+        <activity android:name="com.booking.android.hotel.activity.DiscoverActivity" />
+        <activity android:name="com.booking.android.hotel.activity.TripsListActivity" />
+        <activity android:name="com.booking.android.hotel.activity.HotelVocabActivity" />
+        <activity android:name="com.booking.android.hotel.activity.ListGridActivity" />
+
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="ec13634a943b5df6876b6bb81dcc9d2ad8a830c8" />
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+    </application>
+
+</manifest>

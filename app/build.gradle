@@ -1,0 +1,76 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin: 'realm-android'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+
+    defaultConfig {
+        renderscriptTargetApi 25
+        renderscriptSupportModeEnabled true
+        applicationId "com.booking.android.hotel"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    mavenCentral();
+    maven { url 'http://android.aviasales.ru/repositories/' }
+    maven { url 'https://github.com/500px/500px-android-blur/raw/master/releases/' }
+    maven { url "https://jitpack.io" }
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.android.support:design:25.0.1'
+
+    compile 'de.hdodenhof:circleimageview:1.3.0'
+
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.android.support:cardview-v7:25.0.1'
+    compile 'com.android.support:design:25.0.1'
+    compile 'com.android.support:recyclerview-v7:25.0.1'
+    compile 'uk.co.ribot:easyadapter:1.4.0@aar'
+    compile 'com.koushikdutta.ion:ion:2.+'
+    compile 'me.henrytao:smooth-app-bar-layout:24.1.0.0'
+    compile 'ru.aviasales.template:aviasalesSdkTemplate:2.1.8'
+    compile 'com.facebook.android:facebook-android-sdk:4.19.0'
+    compile 'com.google.android.gms:play-services-ads:10.2.4'
+    // compile 'ru.aviasales.template:appodeallib:2.1.8'
+
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    compile 'uk.co.chrisjenx:calligraphy:2.1.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
+    compile 'com.github.todou:appbarspring:1.0.2'
+    compile 'com.github.mancj:SlimChart:0.1.2'
+    compile 'com.airbnb.android:epoxy:1.6.2'
+    annotationProcessor 'com.airbnb.android:epoxy-processor:1.6.2'
+    compile 'org.apache.commons:commons-lang3:3.4'
+    compile 'com.google.code.gson:gson:2.4'
+
+    compile 'com.jakewharton:butterknife:8.7.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.7.0'
+
+
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
+        transitive = true;
+    }
+
+}
